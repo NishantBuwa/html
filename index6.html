@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fixed Header and Footer Layout</title>
+  </head>
+  <body>
+      <header>
+      <h1>Fixed Header</h1>
+    </header>
+    <div class="content">
+      <h2>Centered Content</h2>
+    <p>Hi am an Engineering Student</p>
+  </div>
+    <footer>
+      <p>Fixed Footer</p>
+    </footer>
+  </body>
+</html>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  color: #2804f2;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  color: #f00909;
+  text-align: center;
+  padding-top: 15px;
+}
+</style>
